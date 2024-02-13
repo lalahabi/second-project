@@ -3,11 +3,14 @@ body{
   background-image:url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2dvb;
 }
 
 .container{
   background-color: white;
   min-height: 100vh;
+  max-width: 80vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
   .task-area{
@@ -38,4 +41,17 @@ body{
 
 .task-done{
   text-decoration: line-through;
+}
+
+.task-tabs div{
+  cursor: pointer;
+}
+.task-input:focus {
+  outline: none;
+  border-bottom: 3px solid blanchedalmond;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: 0.5s;
+  padding-top: 35px;
 }
