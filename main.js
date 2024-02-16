@@ -6,6 +6,15 @@ let taskList=[];
 let mode ="all"
 let filterList=[]
 addButton.addEventListener("click", addTask);
+taskInput.addEventListener("focus",function(){taskInput.value = "" })
+
+addButton.addEventListener("click", function(){
+  if(taskInput.value == ""){
+      return;
+  }
+  addTask(); 
+});
+
 
 function addTask() {
   let taskValue = taskInput.value;
