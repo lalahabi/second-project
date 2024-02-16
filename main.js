@@ -5,7 +5,7 @@ let tabs= document.querySelectorAll(".task-tabs div")
 let taskList=[];
 let mode ="all"
 let filterList=[]
-addButton.addEventListener("click", addTask);
+
 taskInput.addEventListener("focus",function(){taskInput.value = "" })
 
 addButton.addEventListener("click", function(){
@@ -14,20 +14,6 @@ addButton.addEventListener("click", function(){
   }
   addTask(); 
 });
-
-
-function addTask() {
-  let taskValue = taskInput.value;
-  let task = {
-    content: taskValue,
-    isComplete: false,
-    id: randomIDGenerator(),
-  };
-
-  taskList.push(task);
-  userInput.value = "";
-  render();
-}
 
 
 for(let i=1; i<tabs.length; i++){
