@@ -18,13 +18,23 @@ body{
   border-bottom: 30px solid transparent;
 }
   .task-area{
-  border : 1px solid lightgrey;
+  border : 1px solid lightpink;
 }
 .task-tabs{
   display : flex;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightppink;
   position : relative;
 }
+
+.input-area {
+    position: relative;
+}
+
+.task-input:focus + label > span {
+  top: 0px;
+  color: #333;
+}
+
 .task-tabs div{
   padding:1em
 }
